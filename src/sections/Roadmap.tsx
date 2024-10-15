@@ -21,7 +21,7 @@ const roadmap = [
 		id: 4,
 		title: "Global Partnerships & Utility Growth 🌐",
 		description:
-			"Partnering with key players worldwide and expanding real-world use cases for $LBT.",
+			"Partnering with key players worldwide and expanding real-world use cases for $BUBU.",
 	},
 ];
 
