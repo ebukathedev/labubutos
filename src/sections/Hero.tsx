@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
 								LABUBUTOS! 🚀
 							</span>
 						</h1>
-						<p className="font-semibold md:text-xl">
+						<p className="text-lg font-semibold md:text-xl">
 							The #1 Meme Fan Token on Aptos – Be Part of the
 							Revolution!
 						</p>
