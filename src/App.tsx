@@ -1,13 +1,12 @@
-import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 
 const App: React.FC = () => {
 	return (
-		<main className="w-screen min-h-screen">
+		<main className="w-screen min-h-screen font-montserrat">
 			<Navbar />
 			<Hero />
-			<Footer />
+			{/* <Footer /> */}
 		</main>
 	);
 };

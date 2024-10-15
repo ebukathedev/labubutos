@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,8 +24,13 @@
 @layer utilities {
 	/* In your CSS file */
 	.text-outline {
-		@apply text-brand;
 		text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
 			-2px 2px 0 #000;
+	}
+
+	.text-outline-light {
+		text-shadow: 2px 2px 0 var(--color-secondary),
+			-2px -2px 0 var(--color-secondary),
+			2px -2px 0 var(--color-secondary), -2px 2px 0 var(--color-secondary);
 	}
 }

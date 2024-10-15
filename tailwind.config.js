@@ -12,6 +12,11 @@ export default {
 			},
 			fontFamily: {
 				brand: ["American Purpose", "sans-serif"],
+				montserrat: ["Montserrat", "sans-serif"],
+			},
+			backgroundImage: {
+				"hero-pattern":
+					"url('/src/assets/images/image-removebg-preview.png')",
 			},
 		},
 	},
