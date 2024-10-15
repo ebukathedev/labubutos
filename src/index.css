@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-brand: #ffcc01;
+		--color-secondary: #fff6b4;
+	}
+
+	@font-face {
+		font-family: "American Purpose";
+		src: url("./assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff2")
+				format("woff2"),
+			url("./assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff")
+				format("woff");
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@layer utilities {
+	/* In your CSS file */
+	.text-outline {
+		@apply text-brand;
+		text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+			-2px 2px 0 #000;
+	}
+}
