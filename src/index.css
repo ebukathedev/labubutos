@@ -22,6 +22,11 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+
+	body,
+	html {
+		@apply overflow-x-hidden scroll-smooth;
+	}
 }
 
 @layer utilities {

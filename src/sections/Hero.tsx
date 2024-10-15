@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 							</span>
 						</h1>
 						<p className="font-semibold md:text-xl">
-							The #1 Fan Token on Aptos – Be Part of the
+							The #1 Meme Fan Token on Aptos – Be Part of the
 							Revolution!
 						</p>
 					</div>
@@ -58,9 +58,14 @@ const Hero: React.FC = () => {
 								</button>
 							</div>
 						</div>
-						<a className="block w-full px-4 py-2 mx-auto mt-5 text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand">
-							Buy $LBT
-						</a>
+						<div className="flex gap-2">
+							<a className="block w-full px-4 py-2 mx-auto mt-5 text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand">
+								Buy $LBT
+							</a>
+							<a className="block w-full px-4 py-2 mx-auto mt-5 text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand">
+								Chart
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className="md:w-1/2">

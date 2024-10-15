@@ -6,7 +6,7 @@ import Tokenomics from "./sections/Tokenomics";
 
 const App: React.FC = () => {
 	return (
-		<main className="w-screen min-h-screen font-montserrat">
+		<main className="w-screen min-h-screen overflow-hidden font-montserrat">
 			<Navbar />
 			<Hero />
 			<About />
