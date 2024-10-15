@@ -2,7 +2,7 @@ import tokenomicsIng from "../assets/images/illustration-2.png";
 
 const Tokenomics: React.FC = () => {
 	return (
-		<section className="flex-1 bg-secondary pt-[120px] pb-[100px] border-b-[3px] border-black">
+		<section className="flex-1 bg-secondary pt-[120px] pb-[100px]">
 			<div className="container px-4 md:px-20 lg:px-4 lg:w-[80%]">
 				<div className="flex flex-col-reverse gap-16 md:gap-8 lg:flex-row-reverse lg:items-center">
 					<div className="lg:w-1/2 shadow-[2px_2px_0_3px] h-fit rounded-xl border-[2px] border-black">

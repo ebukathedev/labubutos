@@ -2,6 +2,7 @@ import About from "./sections/About";
 import Banner from "./sections/Banner";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import Roadmap from "./sections/Roadmap";
 import Tokenomics from "./sections/Tokenomics";
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
 			<About />
 			<Banner />
 			<Tokenomics />
+			<Roadmap />
 			{/* <Footer /> */}
 		</main>
 	);
