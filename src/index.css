@@ -8,6 +8,7 @@
 	:root {
 		--color-brand: #ffcc01;
 		--color-secondary: #fff6b4;
+		--color-accent: #00cc99;
 	}
 
 	@font-face {

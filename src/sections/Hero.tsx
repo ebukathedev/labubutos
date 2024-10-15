@@ -32,7 +32,10 @@ const Hero: React.FC = () => {
 							Contact Address
 						</div>
 						<div className="shadow-[1px_2px_0_3px] bg-secondary rounded-md px-4 py-2 flex items-center gap-4">
-							<span className="text-sm font-semibold truncate">
+							<span
+								className="text-sm font-semibold truncate"
+								onClick={handleCopy}
+							>
 								0xAbC1234567890DefABC1234567890DefABC1...
 							</span>
 							<button
@@ -40,13 +43,16 @@ const Hero: React.FC = () => {
 								onClick={handleCopy}
 							>
 								{copied ? (
-									<ClipboardDocumentCheckIcon className="text-white size-6" />
+									<ClipboardDocumentCheckIcon className="block text-brand size-6" />
 								) : (
-									<ClipboardDocumentIcon className="text-white size-6" />
+									<ClipboardDocumentIcon className="block text-white size-6" />
 								)}
 							</button>
 						</div>
 					</div>
+					<a className="block w-full px-4 py-2 mt-5 text-2xl text-center text-white rounded-md bg-accent font-brand">
+						Buy $LBT
+					</a>
 				</div>
 			</div>
 		</section>

@@ -9,6 +9,7 @@ export default {
 			colors: {
 				brand: "var(--color-brand)",
 				secondary: "var(--color-secondary)",
+				accent: "var(--color-accent)",
 			},
 			fontFamily: {
 				brand: ["American Purpose", "sans-serif"],
