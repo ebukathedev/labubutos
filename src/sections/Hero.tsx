@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
 								Buy $BUBU
 							</a>
 							<a
-								href="#"
+								href="https://dexscreener.com/aptos/liquidswapv0p5-11262"
 								target="_blank"
 								rel="noreferrer"
 								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
