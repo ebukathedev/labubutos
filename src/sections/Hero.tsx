@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(
-			"0xAbC1234567890DefABC1234567890DefABC12345"
+			"0xce1a44fa48a726258a11a499797bc38befa6bc2ef4019b686c59e0a301b1a1c8::BUBU::BUBU"
 		);
 		setCopied(true);
 		setTimeout(() => setCopied(false), 2000);
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 									className="text-sm font-semibold truncate"
 									onClick={handleCopy}
 								>
-									0xAbC1234567890DefABC1234567890DefABC1...
+									0xce1a44fa48a726258a11a499797bc38befa6bc2ef4019b686c59e0a301b1a1c8::BUBU::BUBU
 								</span>
 								<button
 									className="px-3 py-2 bg-black rounded-md text-brand"
