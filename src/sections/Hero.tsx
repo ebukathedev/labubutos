@@ -1,11 +1,7 @@
 import { useState } from "react";
-import {
-	ClipboardDocumentCheckIcon,
-	ClipboardDocumentIcon,
-} from "@heroicons/react/24/solid";
-
-import heroImg from "../assets/images/mascot.png";
-// import Banner from "./Banner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
+import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Hero: React.FC = () => {
 	const [copied, setCopied] = useState(false);
@@ -19,7 +15,10 @@ const Hero: React.FC = () => {
 	};
 
 	return (
-		<section className="flex-1 bg-brand pt-[180px] pb-[100px] border-b-[3px] border-black">
+		<section
+			id="home"
+			className="flex-1 bg-brand pt-[180px] pb-[100px] border-b-[3px] border-black"
+		>
 			<div className="container flex flex-col-reverse gap-10 px-4 md:items-center md:flex-row">
 				<div className="w-full md:w-1/2">
 					<div className="space-y-4 sm:text-center md:text-left">
@@ -51,18 +50,34 @@ const Hero: React.FC = () => {
 									onClick={handleCopy}
 								>
 									{copied ? (
-										<ClipboardDocumentCheckIcon className="block text-brand size-6" />
+										<FontAwesomeIcon
+											icon={faClipboardCheck}
+											className="block text-brand size-6"
+										/>
 									) : (
-										<ClipboardDocumentIcon className="block text-white size-6" />
+										<FontAwesomeIcon
+											icon={faCopy}
+											className="block text-white size-6"
+										/>
 									)}
 								</button>
 							</div>
 						</div>
 						<div className="flex gap-2 max-[375px]:flex-col mt-5">
-							<a className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
+							>
 								Buy $BUBU
 							</a>
-							<a className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand">
+							<a
+								href="#"
+								target="_blank"
+								rel="noreferrer"
+								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
+							>
 								Chart
 							</a>
 						</div>
@@ -71,14 +86,13 @@ const Hero: React.FC = () => {
 				<div className="md:w-1/2">
 					<div className="border-2 border-black rounded-full w-[70%] bg-secondary mx-auto md:w-[90%] bg-hero-pattern">
 						<img
-							src={heroImg}
+							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/mascot_faakjr.png`}
 							alt="Labubutos Mascot"
 							className="md:-translate-x-1 md:translate-y-4"
 						/>
 					</div>
 				</div>
 			</div>
-			{/* <Banner /> */}
 		</section>
 	);
 };

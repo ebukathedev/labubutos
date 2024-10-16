@@ -1,6 +1,7 @@
 import About from "./sections/About";
 import Banner from "./sections/Banner";
 import Community from "./sections/Community";
+import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import Roadmap from "./sections/Roadmap";
@@ -17,7 +18,7 @@ const App: React.FC = () => {
 			<Roadmap />
 			<Banner className="bg-tertiary" />
 			<Community />
-			{/* <Footer /> */}
+			<Footer />
 		</main>
 	);
 };

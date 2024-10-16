@@ -2,16 +2,18 @@ import bgIcon1 from "../assets/images/bg-icon-1.svg";
 import bgIcon2 from "../assets/images/bg-icon-2.svg";
 import bgIcon3 from "../assets/images/bg-icon-3.svg";
 import bgIcon4 from "../assets/images/bg-icon-4.svg";
-import aboutImg from "../assets/images/illustration-1.png";
 
 const About: React.FC = () => {
 	return (
-		<section className="relative flex-1 bg-tertiary pt-[120px] pb-[100px] border-b-[3px] border-black overflow-hidden">
+		<section
+			id="about"
+			className="relative flex-1 bg-tertiary pt-[120px] pb-[100px] border-b-[3px] border-black overflow-hidden"
+		>
 			<div className="container relative z-10 px-4 md:px-20 lg:px-4">
 				<div className="flex flex-col gap-16 md:gap-8 lg:flex-row lg:items-center">
 					<div className="lg:w-1/2 shadow-[2px_2px_0_3px] h-fit rounded-xl border-2 border-black">
 						<img
-							src={aboutImg}
+							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/illustration-1_qmcquq.png`}
 							alt="illustration"
 							className="block w-full"
 						/>

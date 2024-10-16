@@ -1,15 +1,10 @@
 const Footer: React.FC = () => {
+	const year = new Date().getFullYear();
+	
 	return (
-		<footer className="px-4 pt-40 bg-brand rounded-t-[38px]">
-			<div className="container">
-				<div className="-mb-2 text-3xl text-center font-brand">
-					LABUBUTOS
-				</div>
-				<p className="text-center">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Repudiandae, similique molestiae? Quisquam maiores deleniti
-					architecto obcaecati qui? Dolore, non illo!
-				</p>
+		<footer className="py-4 bg-brand">
+			<div className="container px-4 text-lg tracking-widest text-center font-brand">
+				Copyright © {year} - Labubutos
 			</div>
 		</footer>
 	);
