@@ -28,7 +28,12 @@ const Community: React.FC = () => {
 					<h2 className="text-5xl sm:text-6xl tracking-wider text-center font-brand text-[#fff9cd] text-outline  lg:text-7xl">
 						Join our <br /> community
 					</h2>
-					<a className="block px-6 pt-3 pb-2 mx-auto border-2 border-black w-fit shadow-[4px_4px_0_0px] font-brand text-xl tracking-wider rounded-md xl:px-8 xl:pt-4 xl:pb-3 cursor-pointer">
+					<a
+						href="#"
+						target="_blank"
+						rel="noreferrer"
+						className="block px-6 pt-3 pb-2 mx-auto border-2 border-black w-fit shadow-[4px_4px_0_0px] font-brand text-xl tracking-wider rounded-md xl:px-8 xl:pt-4 xl:pb-3 cursor-pointer"
+					>
 						Buy $BUBU Now!
 					</a>
 				</div>
