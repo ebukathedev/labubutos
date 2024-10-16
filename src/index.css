@@ -8,10 +8,8 @@
 	:root {
 		--color-brand: #ffcc01;
 		--color-secondary: #fff6b4;
-		--color-sndary: #fff9cd;
 		--color-tertiary: #f0f8ff;
 		--color-accent: #00cc99;
-		--color-accent-200: #00ccff;
 	}
 
 	@font-face {
@@ -27,6 +25,19 @@
 	body,
 	html {
 		@apply overflow-x-hidden scroll-smooth;
+	}
+
+	html {
+		@apply scroll-smooth;
+	}
+	html::-webkit-scrollbar {
+		@apply w-[5px];
+	}
+	html::-webkit-scrollbar-thumb {
+		@apply rounded-lg bg-accent border-r-[5px];
+	}
+	html::-webkit-scrollbar-track {
+		@apply bg-yellow-200;
 	}
 }
 
