@@ -89,6 +89,8 @@ const Hero: React.FC = () => {
 							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/mascot_faakjr.png`}
 							alt="Labubutos Mascot"
 							className="md:-translate-x-1 md:translate-y-4"
+							width="500"
+							height="500"
 						/>
 					</div>
 				</div>

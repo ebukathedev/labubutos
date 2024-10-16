@@ -42,6 +42,8 @@ const Community: React.FC = () => {
 						src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/illustration-3_hfv0f8.png`}
 						alt="illustration"
 						className="block w-full"
+						width="500"
+						height="500"
 					/>
 				</div>
 			</div>
