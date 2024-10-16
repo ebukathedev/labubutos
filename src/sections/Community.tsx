@@ -29,7 +29,7 @@ const Community: React.FC = () => {
 						Join our <br /> community
 					</h2>
 					<a
-						href="#"
+						href="https://app.panora.exchange/swap"
 						target="_blank"
 						rel="noreferrer"
 						className="block px-6 pt-3 pb-2 mx-auto border-2 border-black w-fit shadow-[4px_4px_0_0px] font-brand text-xl tracking-wider rounded-md xl:px-8 xl:pt-4 xl:pb-3 cursor-pointer"

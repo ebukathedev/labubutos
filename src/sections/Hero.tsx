@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
 						</div>
 						<div className="flex gap-2 max-[375px]:flex-col mt-5">
 							<a
-								href="#"
+								href="https://app.panora.exchange/swap"
 								target="_blank"
 								rel="noreferrer"
 								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
