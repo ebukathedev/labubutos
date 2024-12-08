@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
+import { FaCopy, FaClipboardCheck } from "react-icons/fa6";
 
 const Hero: React.FC = () => {
 	const [copied, setCopied] = useState(false);
@@ -33,7 +31,7 @@ const Hero: React.FC = () => {
 							Revolution!
 						</p>
 					</div>
-					<div className="max-w-lg mx-auto md:mx-0">
+					<div className="mx-auto max-w-lg md:mx-0">
 						<div className="mt-8">
 							<div className="text-xl tracking-wider font-brand">
 								Contact Address
@@ -50,13 +48,9 @@ const Hero: React.FC = () => {
 									onClick={handleCopy}
 								>
 									{copied ? (
-										<FontAwesomeIcon
-											icon={faClipboardCheck}
-											className="block text-brand size-6"
-										/>
+										<FaClipboardCheck className="block text-brand size-6" />
 									) : (
-										<FontAwesomeIcon
-											icon={faCopy}
+										<FaCopy
 											className="block text-white size-6"
 										/>
 									)}
@@ -68,7 +62,7 @@ const Hero: React.FC = () => {
 								href="https://app.panora.exchange/swap"
 								target="_blank"
 								rel="noreferrer"
-								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
+								className="block px-4 py-2 mx-auto w-full text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
 							>
 								Buy $BUBU
 							</a>
@@ -76,7 +70,7 @@ const Hero: React.FC = () => {
 								href="https://dexscreener.com/aptos/liquidswapv0p5-11262"
 								target="_blank"
 								rel="noreferrer"
-								className="block w-full px-4 py-2 mx-auto text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
+								className="block px-4 py-2 mx-auto w-full text-2xl tracking-widest text-center text-white rounded-md text-outline bg-accent font-brand"
 							>
 								Chart
 							</a>
