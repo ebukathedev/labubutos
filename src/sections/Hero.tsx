@@ -86,11 +86,14 @@ const Hero: React.FC = () => {
 				<div className="md:w-1/2">
 					<div className="border-2 border-black rounded-full w-[70%] bg-secondary mx-auto md:w-[90%] bg-hero-pattern">
 						<img
-							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/mascot_faakjr.png`}
+							src={`https://res.cloudinary.com/drtebxtdt/image/upload/q_auto,f_auto,w_500/v1729040403/labubutos/mascot_faakjr.png`}
 							alt="Labubutos Mascot"
 							className="md:-translate-x-1 md:translate-y-4"
 							width="500"
 							height="500"
+							loading="eager"
+							decoding="async"
+							fetchPriority="high"
 						/>
 					</div>
 				</div>

@@ -29,13 +29,31 @@
 			content="LABUBUTOS - The #1 Meme Fan Token on Aptos – Be Part of the Revolution!"
 		/>
 		<meta
+			name="twitter:image"
+			content="https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/mascot_faakjr.png"
+		/>
+		<meta
 			name="google-site-verification"
 			content="5CW3ohcmOFAx1MOut1i9MUV5jObtX85iygeYOQ9b7gc"
 		/>
-		<meta name="twitter:image" content="/path/to/your/image.jpg" />
-		<link rel="preconnect" href="https://ka-f.fontawesome.com" />
-		<link rel="preconnect" href="https://res.cloudinary.com" />
+		
+		<!-- Resource Hints -->
+		<link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+		<link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 		<link rel="dns-prefetch" href="https://res.cloudinary.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<!-- Preload Critical Resources -->
+		<link 
+			rel="preload" 
+			href="/src/assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff2" 
+			as="font" 
+			type="font/woff2" 
+			crossorigin 
+		/>
+		
+		<!-- Favicons -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -54,11 +72,15 @@
 			href="/favicon-16x16.png"
 		/>
 		<link rel="manifest" href="/site.webmanifest" />
+		
+		<!-- Async Load FontAwesome -->
 		<script
+			async
 			defer
 			src="https://kit.fontawesome.com/8ae1a4bc49.js"
 			crossorigin="anonymous"
 		></script>
+		
 		<title>LABUBUTOS</title>
 	</head>
 	<body>

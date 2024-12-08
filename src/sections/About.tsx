@@ -1,7 +1,12 @@
+import { memo } from "react";
 import bgIcon1 from "../assets/images/bg-icon-1.svg";
 import bgIcon2 from "../assets/images/bg-icon-2.svg";
 import bgIcon3 from "../assets/images/bg-icon-3.svg";
 import bgIcon4 from "../assets/images/bg-icon-4.svg";
+
+const BackgroundIcon = memo(({ src, alt, className }: { src: string; alt: string; className: string }) => (
+  <img src={src} alt={alt} className={className} loading="lazy" />
+));
 
 const About: React.FC = () => {
 	return (
@@ -13,11 +18,13 @@ const About: React.FC = () => {
 				<div className="flex flex-col gap-16 md:gap-8 lg:flex-row lg:items-center">
 					<div className="lg:w-1/2 shadow-[2px_2px_0_3px] h-fit rounded-xl border-2 border-black">
 						<img
-							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/illustration-1_qmcquq.png`}
+							src={`https://res.cloudinary.com/drtebxtdt/image/upload/q_auto,f_auto,w_500/v1729040403/labubutos/illustration-1_qmcquq.png`}
 							alt="illustration"
 							className="block w-full"
 							width="500"
 							height="500"
+							loading="lazy"
+							decoding="async"
 						/>
 					</div>
 					<div className="lg:w-1/2">
@@ -64,22 +71,22 @@ const About: React.FC = () => {
 				</div>
 			</div>
 
-			<img
+			<BackgroundIcon
 				src={bgIcon1}
 				alt="background icon"
 				className="absolute w-[100px] top-10 left-0 opacity-75"
 			/>
-			<img
+			<BackgroundIcon
 				src={bgIcon2}
 				alt="background icon"
 				className="absolute w-[100px] top-10 right-0 opacity-75"
 			/>
-			<img
+			<BackgroundIcon
 				src={bgIcon3}
 				alt="background icon"
 				className="absolute w-[100px] bottom-0 left-0 opacity-75"
 			/>
-			<img
+			<BackgroundIcon
 				src={bgIcon4}
 				alt="background icon"
 				className="absolute w-[200px] bottom-0 right-0 opacity-75"
@@ -88,4 +95,4 @@ const About: React.FC = () => {
 	);
 };
 
-export default About;
+export default memo(About);

@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const roadmap = [
 	{
 		id: 1,
@@ -15,7 +17,7 @@ const roadmap = [
 		id: 3,
 		title: "CEX Listing & Expansion 🔥",
 		description:
-			"After launching on DEX, we’ll secure listings on major centralized exchanges (CEX).",
+			"After launching on DEX, we'll secure listings on major centralized exchanges (CEX).",
 	},
 	{
 		id: 4,
@@ -23,7 +25,23 @@ const roadmap = [
 		description:
 			"Partnering with key players worldwide and expanding real-world use cases for $BUBU.",
 	},
-];
+] as const;
+
+const RoadmapCard = memo(({ id, title, description }: typeof roadmap[number]) => (
+  <div className="border-2 border-black shadow-[1px_2px_0_3px] rounded-xl">
+    <div>
+      <div className="pt-2 pb-1 text-2xl tracking-wider text-center bg-yellow-200 border-b-2 border-black font-brand rounded-t-xl">
+        Phase {id}
+      </div>
+      <div className="px-3 py-1 text-sm font-bold text-center border-b-2 border-black">
+        {title}
+      </div>
+    </div>
+    <p className="px-4 py-2 pb-4 font-medium text-center">
+      {description}
+    </p>
+  </div>
+));
 
 const Roadmap: React.FC = () => {
 	return (
@@ -37,22 +55,7 @@ const Roadmap: React.FC = () => {
 				</h2>
 				<div className="grid gap-6 max-w-[440px] mx-auto md:grid-cols-2 md:max-w-none md:mx-0 xl:grid-cols-4">
 					{roadmap.map((item) => (
-						<div
-							key={item.id}
-							className="border-2 border-black shadow-[1px_2px_0_3px] rounded-xl"
-						>
-							<div>
-								<div className="pt-2 pb-1 text-2xl tracking-wider text-center bg-yellow-200 border-b-2 border-black font-brand rounded-t-xl">
-									Phase {item.id}
-								</div>
-								<div className="px-3 py-1 text-sm font-bold text-center border-b-2 border-black">
-									{item.title}
-								</div>
-							</div>
-							<p className="px-4 py-2 pb-4 font-medium text-center">
-								{item.description}
-							</p>
-						</div>
+						<RoadmapCard key={item.id} {...item} />
 					))}
 				</div>
 			</div>
@@ -60,4 +63,4 @@ const Roadmap: React.FC = () => {
 	);
 };
 
-export default Roadmap;
+export default memo(Roadmap);

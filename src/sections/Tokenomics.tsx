@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const Tokenomics: React.FC = () => {
 	return (
 		<section id="tokenomics" className="bg-secondary pt-[120px] pb-[100px]">
@@ -5,11 +7,13 @@ const Tokenomics: React.FC = () => {
 				<div className="flex flex-col-reverse gap-16 md:gap-8 lg:flex-row-reverse lg:items-center">
 					<div className="lg:w-1/2 shadow-[2px_2px_0_3px] h-fit rounded-xl border-2 border-black">
 						<img
-							src={`https://res.cloudinary.com/drtebxtdt/image/upload/v1729040403/labubutos/illustration-2_qykwdn.png`}
+							src={`https://res.cloudinary.com/drtebxtdt/image/upload/q_auto,f_auto,w_500/v1729040403/labubutos/illustration-2_qykwdn.png`}
 							alt="illustration"
 							className="block w-full"
 							width="500"
 							height="500"
+							loading="lazy"
+							decoding="async"
 						/>
 					</div>
 					<div className="lg:w-1/2">
@@ -49,4 +53,4 @@ const Tokenomics: React.FC = () => {
 	);
 };
 
-export default Tokenomics;
+export default memo(Tokenomics);

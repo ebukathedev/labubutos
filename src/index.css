@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,12 +14,10 @@
 
 	@font-face {
 		font-family: "American Purpose";
-		src: url("./assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff2")
-				format("woff2"),
-			url("./assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff")
-				format("woff");
+		src: url("./assets/fonts/American-Purpose-STRIPE-1-Normal.ttf.woff2") format("woff2");
 		font-weight: normal;
 		font-style: normal;
+		font-display: swap;
 	}
 
 	body,
